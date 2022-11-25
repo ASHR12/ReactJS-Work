@@ -246,6 +246,7 @@ ul {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
+  margin-bottom: 0;
 }
 .form-input,
 .form-textarea {
@@ -257,6 +258,11 @@ ul {
 }
 .form-row {
   margin-bottom: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  justify-items: start;
 }
 
 .form-textarea {
@@ -435,4 +441,23 @@ ul {
   display: grid;
   justify-items: start;
   text-transform: capitalize;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 100px 150px 1fr;
+  gap: 1rem;
+  justify-items: start;
+  justify-content: start;
+}
+
+.person p:nth-child(3) {
+  color: var(--grey-400);
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
