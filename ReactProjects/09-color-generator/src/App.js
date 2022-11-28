@@ -30,7 +30,15 @@ function App() {
     <>
       <div className="header-section section-center">
         <div className="title">
-          <h2 style={{ color: `${color}` }}>Color Generator</h2>
+          <h2 style={{ color: `${color}` }}>
+            Color Generator
+            <span className="info">
+              <p>
+                ( Refresh to generate random color or input value in HEX Code
+                section. )
+              </p>
+            </span>
+          </h2>
           <div
             className="title-underline"
             style={{ background: `${color}` }}

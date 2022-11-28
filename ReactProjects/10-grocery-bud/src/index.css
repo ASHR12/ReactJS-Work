@@ -372,121 +372,91 @@ ul {
 
 /* Project Specific CSS Start */
 body {
-  background-color: var(--white);
+  background-color: var(--primary-50);
 }
-
 .section-center {
-  max-width: var(--fixed-width);
-  position: relative;
-}
-
-.title {
-  margin: 3rem 0;
-  font-weight: 900;
-}
-
-.title span {
-  margin-right: 1rem;
-  color: var(--primary-300);
-}
-.slide {
-  text-align: center;
-  position: absolute;
-  inset: 0; /* setting top,left,bottom and right*/
-  opacity: 0;
-  transition: var(--transition);
-}
-.profileImg {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  padding: 5px;
-  background: var(--white);
-  border: 1px solid rgb(163, 122, 224, 0.7);
-  box-shadow: var(--shadow3);
+  width: 90vw;
   margin: 0 auto;
+  max-width: 600px;
+  background: var(--white);
+  box-shadow: var(--shadow3);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.grocery .alert {
+  text-align: center;
+}
+.grocery .title {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
-.slide h5 {
-  color: var(--primary-500);
-  letter-spacing: 2px;
-}
-
-.slide-title {
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  font-size: 1rem;
-}
-
-.slide-info {
-  letter-spacing: var(--letterSpacing);
-  line-height: 1.8rem;
-  color: var(--grey-500);
-  margin-bottom: 0;
-  padding: 0 1rem;
-  font-weight: 300;
-}
-
-.quote-icon {
-  font-size: 3rem;
-  color: var(--primary-500);
-  margin-top: 1rem;
-}
-
-.slider-btn {
-  display: grid;
-  top: 183px;
-  background: var(--primary-300);
-  border: transparent;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  place-items: center;
-  padding: 0.5rem;
-  color: var(--white);
-}
-.slider-btn:hover {
-  background-color: var(--primary-500);
-}
-.prev-btn {
-  position: absolute;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.next-btn {
-  position: absolute;
-  right: 0;
-  /* left: 100%; */
-  /* transform: translate(-50%, -50%); */
-  transform: translateY(-50%);
-}
-
-.slider-container {
+.grocery .form-row {
   display: flex;
-  position: relative;
-  height: 450px;
-  overflow: hidden;
-  /* "When a div contains nothing except floated or positioned elements, its height becomes 0" as we are setting overflow hidden it's important to set height  */
+}
+.grocery .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-.active {
-  transform: translateX(0);
-  opacity: 1;
+.grocery .form-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-.last {
-  transform: translateX(-100%);
+input#task:focus {
+  outline: none;
 }
-.next {
-  transform: translateX(100%);
+.grocery-container {
+  /* visibility: hidden; */
 }
-@media (min-width: 768px) {
-  .slider-btn {
-    font-size: 1.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-  }
+.grocery-list {
+  margin: 1rem 0;
+  display: grid;
+  row-gap: 1rem;
+  transition: var(--transition);
+}
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--borderRadius);
+  transition: var(--transition);
+}
+.grocery-item:hover {
+  background: var(--primary-200);
+}
+.grocery-item .title {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+.grocery-item button {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+.edit-btn {
+  font-size: 0.8rem;
+  color: var(--green-dark);
+}
+.delete-btn {
+  font-size: 0.8rem;
+  color: var(--red-dark);
 }
 
+.clear-btn {
+  background: transparent;
+  border: transparent;
+  color: var(--red-dark);
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.show {
+  visibility: visible;
+}
 /* Project Specific CSS END */

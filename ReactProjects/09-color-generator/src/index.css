@@ -386,6 +386,15 @@ body {
 }
 .title h2 {
   margin-bottom: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  gap: 1rem;
+}
+.title h2 span p {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  color: black;
 }
 .title-underline {
   width: 100%;
