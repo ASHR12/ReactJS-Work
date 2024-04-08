@@ -21,6 +21,7 @@
     - [Short Circuit Evaluation](#short-circuit-evaluation)
     - [Controlled Input](#controlled-input)
     - [UseRef Hook](#useref-hook)
+    - [UseReducer Hook](#usereducer-hook)
 
 ## Development
 
@@ -1192,3 +1193,9 @@ const UseRefBasics = () => {
 
 export default UseRefBasics;
 ```
+
+### UseReducer Hook
+
+- The useReducer Hook is similar to the useState Hook.
+- It allows for custom state logic.
+- If you find yourself keeping track of multiple pieces of state that rely on complex logic, useReducer may be useful.

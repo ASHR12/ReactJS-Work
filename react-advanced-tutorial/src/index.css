@@ -239,7 +239,7 @@ ul {
   box-shadow: var(--shadow2);
   padding: 2rem 2.5rem;
   /* centering form  you can change later based on requirement*/
-  margin: 3rem auto;
+  margin: 5rem auto;
 }
 .form-label {
   display: block;
@@ -363,6 +363,12 @@ ul {
   }
 }
 
+/* Tutorial css start */
+
+body {
+  background-color: var(--primary-50);
+}
+
 .item {
   background: var(--primary-100);
   display: flex;
@@ -447,8 +453,7 @@ ul {
   display: grid;
   grid-template-columns: 100px 150px 1fr;
   gap: 1rem;
-  justify-items: start;
-  justify-content: start;
+  place-items: center;
 }
 
 .person p:nth-child(3) {
@@ -460,4 +465,30 @@ ul {
 
 .hide {
   display: none;
+}
+
+/* Modal example usereducer */
+.modal {
+  display: inline-block;
+  padding: 1rem 0.75rem;
+  background: yellow;
+  text-transform: capitalize;
+  position: absolute;
+  top: 80px;
+  transform: translateX(-50%);
+}
+
+.people-container {
+  display: grid;
+  gap: 1rem;
+}
+.people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  place-items: center;
+}
+.people p {
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
