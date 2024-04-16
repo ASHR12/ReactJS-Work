@@ -23,14 +23,15 @@ const useFetchCMSData = () => {
           content_type: contentType,
         });
         const cmsdata = response.items.map((item) => {
-          const { tweetId, youtubevideoId } = item.fields;
+          const { tweetId, youtubevideoId, links } = item.fields;
           return {
             tweetId,
             youtubevideoId,
+            links,
           };
         });
         setCmsData(cmsdata);
-        console.log("fetch", cmsdata);
+        // console.log("fetch", cmsdata);
       } catch (error) {
         console.error("Error fetching data:", error);
         setCmsData([]);

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Loader from "./Loader";
-import useFetchCMSData from "../fetchCMSData";
-
+import { useGlobalContext } from "../context";
+import SectionTitle from "./SectionTitle";
 const YouTubeIframe = ({ YT_ID }) => {
   console.log("youtubevideoIdXXXX", YT_ID);
   return (
@@ -56,7 +56,7 @@ const TwitterIframe = ({ TW_ID }) => {
 };
 
 const SocialMediaFeeds = () => {
-  const { loading, cmsdata } = useFetchCMSData();
+  const { loading, cmsdata } = useGlobalContext();
   if (loading) {
     return <div>Loading...</div>; // Display a loading message while the data is being fetched
   }
@@ -65,8 +65,9 @@ const SocialMediaFeeds = () => {
     return <div>No data found</div>; // Display a message if no data is found
   }
   return (
-    <div className="bg-purple-100 py-16">
+    <div className="py-16" id="social">
       <div className="align-element flex flex-col gap-8">
+        <SectionTitle text={"Social Media"} />
         {item && (
           <>
             <div>
