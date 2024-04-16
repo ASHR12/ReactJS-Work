@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .align-element {
+    @apply max-w-screen-lg mx-auto px-8;
+  }
+
+  .twitter-embed-container {
+    @apply w-full flex justify-center items-center;
+    min-height: 500px; /* Adjust as needed to approximate the height of your tweets */
+  }
+}
+
+/* Since Tailwind's @apply does not support !important, this needs to be plain CSS */
+.twitter-tweet {
+  width: 100% !important;
+}

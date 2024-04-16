@@ -7,10 +7,13 @@ Flow of Application should be this :
 5. we will use styled component for styling so create all file for each component under /src/assets/wrappers
 6. We will be using react router dom
 7. Handle Error scenario on parent Homelayout (Global Error) and also have singlePageError for each.
-8. We will fetch the data from api on landing page use "useLoaderData concept".
-9. Setup Global loading and use outlet context for application. useNavigation from react-router-dom.
-10. For newsletter create a from with field first name, Last name and email also have method post and handle that using react router dom and also use FormData API to read the data and process.
-11. Use React query for caching .
+8. landing page will be used do siaply all cocktails and it will also have one small form to make a query.
+9. We will fetch the data from api on landing page use "useLoaderData concept" use "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=vodka)" call to fetch data vodka can be change .
+10. Setup Global loading and use outlet context for application. useNavigation from react-router-dom.
+11. For newsletter create a from with field first name, Last name and email also have method post and handle that using react router dom and also use FormData API to read the data and process.
+12. Use React query for caching .
+13. we will also have have single page for product when clicked on all the details will be dsiplayed for product and used :/id
+    api call used for this will be : https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=1523" i= i523 will change
 
 #######################
 
