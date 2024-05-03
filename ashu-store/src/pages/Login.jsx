@@ -2,7 +2,7 @@
 import { useDispatch } from "react-redux";
 import { Form, Link, useNavigate } from "react-router-dom";
 import { FormInput, SubmitBtn } from "../components";
-import { performLogin } from "../features/user/userThunks"; // Adjust the import path as necessary
+import { performLogin } from "../features/user/userActions"; // Adjust the import path as necessary
 import { toast } from "react-toastify";
 
 const Login = () => {
